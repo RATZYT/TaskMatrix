@@ -23,7 +23,7 @@ class NotificationService {
   }) async {
     await _notificationsPlugin.zonedSchedule(
       id,
-      'Pengingat Habit: \$title',
+      'Pengingat Habit: $title',
       'Waktunya selesaikan habit lu hari ini. Jangan putus streak!',
       _nextInstanceOfTime(hour, minute),
       const NotificationDetails(
