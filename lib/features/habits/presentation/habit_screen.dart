@@ -92,7 +92,7 @@ class _HabitScreenState extends State<HabitScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Alarm diset ke \${picked.format(context)}'),
+            content: Text('Alarm diset ke ${picked.format(context)}'),
             backgroundColor: const Color(0xFF222222),
           ),
         );
@@ -192,14 +192,14 @@ class _HabitScreenState extends State<HabitScreen> {
                             children: [
                               const Text('\u25B2 ', style: TextStyle(color: Color(0xFFCCCCCC), fontSize: 10)),
                               Text(
-                                'STREAK: \${habit.currentStreak} HARI',
+                                'STREAK:  ${habit.currentStreak} HARI',
                                 style: const TextStyle(color: Color(0xFF888888), fontSize: 11, fontFamily: 'monospace'),
                               ),
                               const SizedBox(width: 16),
                               GestureDetector(
                                 onTap: () => _pickAlarmTime(habit),
                                 child: Text(
-                                  'ALARM: \${habit.reminderHour.toString().padLeft(2, '0')}:\${habit.reminderMinute.toString().padLeft(2, '0')}',
+                                  'ALARM:  ${habit.reminderHour.toString().padLeft(2, '0')}: ${habit.reminderMinute.toString().padLeft(2, '0')}',
                                   style: const TextStyle(color: Color(0xFF00FF66), fontSize: 11, fontFamily: 'monospace'),
                                 ),
                               ),
