@@ -90,7 +90,7 @@ class TodoScreen extends StatelessWidget {
                             children: [
                               const Text('\u25A0 ', style: TextStyle(color: Color(0xFF666666), fontSize: 10)),
                               Text(
-                                'PRIORITY: \${_getPriorityLabel(task.priority)}',
+                                'PRIORITY: ${_getPriorityLabel(task.priority)}',
                                 style: const TextStyle(
                                   color: Color(0xFF666666),
                                   fontSize: 10,
