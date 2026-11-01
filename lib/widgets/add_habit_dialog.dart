@@ -145,7 +145,7 @@ class _AddHabitDialogState extends State<AddHabitDialog> {
                       ),
                     ),
                     child: Text(
-                      '\${_selectedHour.toString().padLeft(2, '0')}:\${_selectedMinute.toString().padLeft(2, '0')}',
+                      '${_selectedHour.toString().padLeft(2, '0')}: ${_selectedMinute.toString().padLeft(2, '0')}',
                       style: const TextStyle(color: Color(0xFF00FF66), fontFamily: 'monospace', fontSize: 12),
                     ),
                   ),
